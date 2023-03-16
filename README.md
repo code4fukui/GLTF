@@ -4,6 +4,9 @@ utils for GLB/GLTF
 
 ## Usage
 
+### GLTF
+
+parse / getTexture
 ```javascript
 import { GLTF } from "https://code4fukui.github.io/GLB/GLTF.js";
 
@@ -14,6 +17,23 @@ const img = GLTF.getTexture(gltf);
 console.log(img);
 await Deno.writeFile("test.jpg", img);
 ```
+also stringify / setTexture
+
+### GLB2GLTF / GLTF2GLB by gltf-pipeline
+
+setup
+```sh
+npm i
+```
+
+```sh
+gltf-pipeline -i inoshi1-min.glb -o inoshi1-min.gltf
+```
+
+```sh
+gltf-pipeline -i inoshi1-min.gltf -o inoshi1-min2.glb
+```
+
 
 ## sample data
 
