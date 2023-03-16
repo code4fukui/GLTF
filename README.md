@@ -31,7 +31,7 @@ gltf-pipeline -i inoshi1-min.glb -o inoshi1-min.gltf
 ```
 
 ```sh
-gltf-pipeline -i inoshi1-min.gltf -o inoshi1-min2.glb
+gltf-pipeline -i inoshi1-min2.gltf -o inoshi1-min2.glb
 ```
 
 
