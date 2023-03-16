@@ -14,3 +14,7 @@ const img = GLTF.getTexture(gltf);
 console.log(img);
 await Deno.writeFile("test.jpg", img);
 ```
+
+## sample data
+
+- [VRイノシシ by PCN北はりま](https://fukuno.jig.jp/3883)
