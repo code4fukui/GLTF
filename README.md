@@ -19,21 +19,29 @@ await Deno.writeFile("test.jpg", img);
 ```
 also stringify / setTexture
 
+### GLB
+
+encode / decode
+```javascript
+import { GLB } from "https://code4fukui.github.io/GLTF/GLB.js";
+
+const bin = await Deno.readFile("./inoshi1-min.glb");
+const gltf = await GLB.decode(bin);
+const glb = await GLB.decode(gltf)
+console.log(glb);
+```
+with [glTF Pipeline ES modules](https://github.com/code4fukui/gltf-pipeline/)
+
 ### GLB2GLTF / GLTF2GLB by gltf-pipeline
 
-setup
+[glTF Pipeline ES modules](https://github.com/code4fukui/gltf-pipeline/)
 ```sh
-npm i
+glb2gltf inoshi1-min.gltf
 ```
 
 ```sh
-gltf-pipeline -i inoshi1-min.glb -o inoshi1-min.gltf
+gltf2glb inoshi1-min.glb
 ```
-
-```sh
-gltf-pipeline -i inoshi1-min2.gltf -o inoshi1-min2.glb
-```
-
 
 ## sample data
 
