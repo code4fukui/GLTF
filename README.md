@@ -1,6 +1,6 @@
-# GLB
+# GLTF
 
-utils for GLB/GLTF
+utils for GLTF/GLB
 
 ## Usage
 
@@ -8,7 +8,7 @@ utils for GLB/GLTF
 
 parse / getTexture
 ```javascript
-import { GLTF } from "https://code4fukui.github.io/GLB/GLTF.js";
+import { GLTF } from "https://code4fukui.github.io/GLTF/GLTF.js";
 
 const bin = await Deno.readFile("./inoshi1-min.gltf");
 const gltf = GLTF.parse(bin);
