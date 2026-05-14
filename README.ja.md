@@ -1,14 +1,12 @@
 # GLTF
 
-> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+GLTF/GLB用ユーティリティ
 
-utils for GLTF/GLB
-
-## Usage
+## 使い方
 
 ### GLTF
 
-parse / getTexture
+パース / テクスチャ取得
 ```javascript
 import { GLTF } from "https://code4fukui.github.io/GLTF/GLTF.js";
 
@@ -19,11 +17,11 @@ const img = GLTF.getTexture(gltf);
 console.log(img);
 await Deno.writeFile("test.jpg", img);
 ```
-also stringify / setTexture
+stringify / setTexture も利用可能です。
 
 ### GLB
 
-encode / decode
+エンコード / デコード
 ```javascript
 import { GLB } from "https://code4fukui.github.io/GLTF/GLB.js";
 
@@ -32,9 +30,9 @@ const gltf = await GLB.decode(bin);
 const glb = await GLB.encode(gltf)
 console.log(glb);
 ```
-with [glTF Pipeline ES modules](https://github.com/code4fukui/gltf-pipeline/)
+[glTF Pipeline ES modules](https://github.com/code4fukui/gltf-pipeline/) を使用しています。
 
-### GLB2GLTF / GLTF2GLB by gltf-pipeline
+### gltf-pipeline による GLB2GLTF / GLTF2GLB
 
 [glTF Pipeline ES modules](https://github.com/code4fukui/gltf-pipeline/)
 ```sh
@@ -45,10 +43,10 @@ glb2gltf inoshi1-min.gltf
 gltf2glb inoshi1-min.glb
 ```
 
-## sample data
+## サンプルデータ
 
 - [VR Inoshi by PCN Harima](https://fukuno.jig.jp/3883)
 
-## License
+## ライセンス
 
-MIT License — see [LICENSE](LICENSE).
+MIT License — 詳細は [LICENSE](LICENSE) を参照してください。
