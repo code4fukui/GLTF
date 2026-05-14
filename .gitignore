@@ -1,1 +1,5 @@
 node_modules/
+
+# meta-ops cleanup
+.DS_Store
+Thumbs.db
